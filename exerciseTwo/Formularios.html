@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Formularios 
+ input para ingresar texto
+ action se usaria para llamar al igual que method
+ select, seria un selector de opciones y el "Value" seria para guardar la variable
+ en input type="radio" name seria la opcion para elegir uno o varias opciones -->
+    <form action=""  method="">
+       <center> <label for="password" id=" ">Ingrese su contraseña</label>
+        <input type="password" placeholder="Contraseña" id="password">
+        <br>
+         <label for="nombre">Nombre</label> 
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+        <br>
+        <textarea name="Observaciones" id="Observaciones" placeholder="Ingrese texto"  cols="45" rows="10" maxlength="1000"></textarea>
+        <br>
+        <label for="pais">Pais</label>
+        <select name="pais" id="pais"> 
+            <option value="Mexico">Mexico</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Chamozuela">Chamozuela</option>
+        </select>
+        <br>
+        <p>Selecione su nivel academico</p>
+        <input type="radio" id="Bachiller" name="escolaridad" value="Bachiller"> <label for="Bachiller">Bachiller</label>
+        <input type="radio" id="Tecnico" name="escolaridad" value="Tecnico"> <label for="Tecnico">Tecnico</label>
+        <input type="radio" id="Tecnologo" name="escolaridad" value="Tecnologo"> <label for="Tecnologo">Tecnologo</label>
+        <input type="radio" id="Universitario" name="escolaridad" value="Universitario"> <label for="Universitario">Universitario</label>
+       <br>
+       <p> Selecion deporte que practica </p>
+        <input type="checkbox" name="" id="Futbol"> Futbol
+        <input type="checkbox" name="" id="Basquetball"> Basquetball
+        <input type="checkbox" name="" id="Voleibol"> Voleibol
+        <input type="checkbox" name="" id="Bmx"> Bmx
+
+        <br>
+        <input type="date" name="" id="" value="2015-01-01" min="2015-01-01" max="2025-12-31">
+        
+        <input type="submit" value="Enviar">
+        <button>guardar</button>
+    </center>
+    </form>
+</body>
+</html>
