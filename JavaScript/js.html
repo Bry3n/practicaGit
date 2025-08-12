@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Datos de usuario</title>
+</head>
+<body>
+  <h2>Formulario de Usuario</h2>
+  <label>Nombre: <input type="text" id="nombre"></label><br>
+  <label>Edad: <input type="number" id="edad"></label><br>
+  <!--
+  <label>Cedula: <input type="number" id="cedula"></label><br>
+  //<label>Numero de contacto: <input type="number" id="contacto"></label><br>
+//<label>Direccion: <input type="number" id="adress"></label><br>
+  //<label>Genero: <input type="number" id="adress"></label><br>
+--> <label>Gender
+             <select name="Gender" id="Gender"> 
+            <option value="Men">Men</option>
+            <option value="Woman">Woman</option>
+            <option value="Non-binary">Non-binary</option>
+            </select>
+            </label>    
+        
+
+        
+  <button onclick="procesarUsuario()">Enviar</button>
+
+  <h3>Resultado:</h3>
+  <div id="resultado"   prestamo ></div>
+
+  <script>
+    // Función para procesar nombre y edad
+   
+
+      if (Gender = "Men"  ) { 
+        if(edad < 18 ){
+            mensaje = "0 pesos";
+
+        } else if ( edad>18 && edad<35){
+                         Prestamo = "15 millones de pesos";
+        }else if ( edad > 34 && edad <= 80){
+        Prestamo = "30 millones de pesos";
+      }       
+      }
+      else if(Gender = "Woman"){
+       if(edad < 18 ){
+            Prestamo = "0 pesos";
+
+
+      }else if (edad>18 && edad<40){
+            Prestamo = "15 millones de pesos";
+      }else ( edad<40);{
+       mensaje = '30 millones de pesos';
+      }       
+   
+      }  else if (Gender =" Non-binary"){
+        mensaje = 'Cortese el pelo gei'
+
+    }
+    
+
+     function procesarUsuario() {
+      let nombre = document.getElementById("nombre").value;
+      let edad = parseInt(document.getElementById("edad").value);
+      let mensaje = `Hola ${nombre}, su prestamo es de  ` ;
+        let
+    }
+      document.getElementById("resultado").innerText = mensaje  ;
+    
+
+  </script>
+</body>
+</html>

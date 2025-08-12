@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Datos de usuario</title>
+</head>
+<body>
+  <h2>Formulario de Usuario</h2>
+  <label>Nombre: <input type="text" id="nombre"></label><br>
+  <label>Año de nacimiento: <input type="number" id="num1"></label><br>
+<label>Gender
+            <select name="Gender" id="Gender"> 
+            <option value="Men">Men</option>
+            <option value="Woman">Woman</option>
+            <option value="Non-binary">Non-binary</option>
+            </select>
+</label>
+  <button onclick="procesarUsuario()">Enviar</button>
+
+
+<!-- <h2>Multiplicador</h2>
+  <label>Num 1: <input type="number" id="num1"></label><br>
+  <label>Num 2: <input type="number" id="num2"></label><br>
+  <button onclick="multiplicar()">Multiplicar</button>
+
+
+  <h3>Resultado:</h3>
+  <div id="resultado"></div>
+-->
+
+  <script>
+    // Función para procesar nombre y edad
+    function procesarUsuario() {
+      let nombre = document.getElementById("nombre").value;
+      let edad = parseInt(document.getElementById("edad").value);
+      let mensaje = `Hola ${nombre}, `;
+
+      if (edad >= 18) {
+        mensaje += "eres mayor de edad.";
+      } else {
+        mensaje += "eres menor de edad.";
+      }
+
+      document.getElementById("resultado").innerText = mensaje;
+    }
+
+
+    function restar() {
+      let n1 = parseFloat(document.getElementById("num1").value);
+      let edad = n1 - 2025;
+      document.getElementById("resultado").innerText = "Resultado: " + resultado;
+    }
+  </script>
+</body>
+</html>

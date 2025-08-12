@@ -1,0 +1,25 @@
+
+    switch (Gender){
+        case  'Men': 
+      if (edad < 18 ) {
+        mensaje = 'No hay cupo brilla, traiga recibo de la casa'
+      }else ( edad>18 && edad<35){
+            mensaje = 'Tiene un cupo de 15millones'
+      }else if (edad>34 && edad<80){
+
+      }
+        
+    }
+
+  /*      } else 
+      } else (Gender = "Woman") {if(edad < 18 ){
+            mensaje = 'no hay credito'
+
+      } else (edad>18 && edad<40){
+            mensaje = 'Tiene un cupo de 95millones'
+      }else( edad<40){
+        mensaje = 'Tiene un cupo de 35millones'
+      }       
+        
+      }
+*/
